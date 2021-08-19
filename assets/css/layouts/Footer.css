@@ -1,0 +1,18 @@
+.footer__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  border-top: 1.5px solid rgba(237,242,247,1);
+  font-size: .9rem;
+}
+.footer__list {
+  flex-grow: 1;
+  padding: 1rem;
+}
+.footer__files {
+  display: flex;
+  padding: 1rem;
+}
+.files--sponsor {
+  text-decoration: none;
+  color: #a8a8a8;
+}

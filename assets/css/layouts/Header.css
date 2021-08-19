@@ -1,14 +1,17 @@
-header {
-  box-sizing: border-box;
+.header {
   width: 20%;
-  height: 100vh;
   background-color: var(--background-primary);
+  position: sticky;
+  top: 0;
+  left: 0;
   overflow: auto;
+  height: 100vh;
+  transition: 1s ease-out;
 }
-header::-webkit-scrollbar {
+.header::-webkit-scrollbar {
   width: .3em;
 }
-header::-webkit-scrollbar-thumb {
+.header::-webkit-scrollbar-thumb {
   background-color: #978d9c;
 }
 .navbar_wrapper {
@@ -23,8 +26,11 @@ header::-webkit-scrollbar-thumb {
 .navbar__logo .text__link {
   font-weight: 600;
   letter-spacing: 3px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--color-secondary);
+}
+.navbarBrand--icon{
+  transition: 1.2s;
 }
 .navbar__item {
   padding: 10px 0px 10px 10px;
@@ -47,12 +53,15 @@ header::-webkit-scrollbar-thumb {
 .navbar__link:hover {
   background-color: var(--background-third);
   border-radius: 5px 0 0 5px;
+  transition: .9s;
 }
+.navbar__link:hover .text__link { color: #8ea1ff; }
 .text__link {
   font-size: 1.1rem;
   text-decoration: none;
   font-weight: 600;
   color: var(--color-secondary);
+  transition: .9s;
 }
 .ml--1{
   margin-left: .9rem;

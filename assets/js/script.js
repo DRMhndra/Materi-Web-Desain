@@ -14,3 +14,29 @@ for( let dropdownlist of dropdown ){
 		}
 	});
 }
+
+// button navbar
+let buttonNav = document.querySelector('.main-navbar__button');
+let headerMenu = document.querySelector('.header');
+let main = document.querySelector('.main');
+let text = document.querySelectorAll('.text__link');
+let logoIcon = document.querySelector('.navbarBrand--icon');
+buttonNav.addEventListener('click', function (_event) {
+		if (headerMenu.classList.contains('change--size')) {
+			headerMenu.classList.remove('change--size');
+			headerMenu.style.width = '20%';
+			main.style.width = '80';
+			logoIcon.style.transform = `rotate(${0}deg)`;
+			text.forEach((e) => {
+				e.style.display = 'block';
+			});
+		} else {
+			headerMenu.classList.add('change--size');
+			headerMenu.style.width = '5%';
+			main.style.width = '95%';
+			logoIcon.style.transform = `rotate(${-180}deg)`;
+			text.forEach((e) => {
+				e.style.display = 'none';
+			});
+		}
+})

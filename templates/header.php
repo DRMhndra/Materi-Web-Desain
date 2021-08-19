@@ -1,8 +1,11 @@
-<header>
+<header class="header">
   <nav class="navbar">
     <ul class="navbar__wrapper">
       <li class="navbar__logo">
-        <h1 class="text__link">WEB Dev</h1>
+        <a href="#" class="navbar__link">
+          <span class="text__link">WEB DEV</span>
+          <img src="./assets/icons/icon-fast.svg" alt="" class="navbar__icon navbarBrand--icon">
+        </a>
       </li>
       <li class="navbar__item">
         <a href="#" class="dropdown navbar__link text--primary">

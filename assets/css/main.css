@@ -12,6 +12,7 @@
 /* layout */
 @import url('./layouts/Header.css');
 @import url('./layouts/Main.css');
+@import url('./layouts/Footer.css');
 
 /* vendors */
 

@@ -8,6 +8,9 @@
   animation: animate--fadeInDown;
   animation-duration: 1.2s;
 }
+.change--size{
+  color: black;
+}
 .text--primary {
   color: var(--color-primary);
 }
