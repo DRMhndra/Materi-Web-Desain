@@ -1,3 +1,4 @@
+// Section Dropdown script
 let dropdown = document.querySelectorAll('.dropdown');
 for( let dropdownlist of dropdown ){
 	dropdownlist.addEventListener('click',function(_event){
@@ -16,27 +17,74 @@ for( let dropdownlist of dropdown ){
 }
 
 // button navbar
+let screenWidth = window.screen.width;
 let buttonNav = document.querySelector('.main-navbar__button');
 let headerMenu = document.querySelector('.header');
 let main = document.querySelector('.main');
 let text = document.querySelectorAll('.text__link');
 let logoIcon = document.querySelector('.navbarBrand--icon');
+
 buttonNav.addEventListener('click', function (_event) {
-		if (headerMenu.classList.contains('change--size')) {
-			headerMenu.classList.remove('change--size');
-			headerMenu.style.width = '20%';
-			main.style.width = '80';
-			logoIcon.style.transform = `rotate(${0}deg)`;
-			text.forEach((e) => {
-				e.style.display = 'block';
-			});
-		} else {
-			headerMenu.classList.add('change--size');
-			headerMenu.style.width = '5%';
-			main.style.width = '95%';
-			logoIcon.style.transform = `rotate(${-180}deg)`;
-			text.forEach((e) => {
-				e.style.display = 'none';
-			});
-		}
-})
+	if (screenWidth > 1200 && screenWidth <= 1920) {
+		changeSizeSideBar('header--changeSizeXl', 'main--changeSizeXl');
+	} else	if (screenWidth > 1024 && screenWidth <= 1200 ) {
+		// changeSizeSideBar(6, 94);
+		changeSizeSideBar('header--changeSizeLg', 'main--changeSizeLg');
+	} else	if (screenWidth > 768 && screenWidth <= 1024) {
+		// changeSizeSideBar(10, 90);
+		changeSizeSideBar('header--changeSizeNb', 'main--changeSizeNb');
+	} else if (screenWidth > 480 && screenWidth <= 768) {
+		// changeSizeSideBar(11, 89);
+		changeSizeSideBar('header--changeSizeTb', 'main--changeSizeTb');
+	}else {
+		headerMenu.style.width = `100%`;
+		main.style.width = `100%`;
+		headerMenu.style.position = 'absolute';
+		headerMenu.style.zIndex = '2';
+	}
+})	
+
+function changeSizeSideBar(_header, _main) {
+	console.log(_header, _main);
+	if (headerMenu.classList.contains('change--size')) {
+		headerMenu.classList.remove('change--size');
+		headerMenu.classList.toggle(`${_header}`);
+		main.classList.toggle(`${_main}`);
+		logoIcon.style.transform = `rotate(${0}deg)`;
+		text.forEach((e) => {
+			e.style.display = 'block';
+		});
+	} else {
+		headerMenu.classList.add('change--size');
+		headerMenu.classList.toggle(`${_header}`);
+		main.classList.toggle(`${_main}`);
+		logoIcon.classList.toggle(`spinLogo`);
+		logoIcon.style.transform = `rotate(${-180}deg)`;
+		text.forEach((e) => {
+			e.style.display = 'none';
+		});
+	}
+}
+
+
+// function changeSizeSideBar(_header, _main) {
+// 	console.log(_header, _main);
+// 	if (headerMenu.classList.contains('change--size')) {
+// 		headerMenu.classList.remove('change--size');
+// 		headerMenu.style.width = `20%`;
+// 		main.style.width = `80%`;
+// 		logoIcon.style.transform = `rotate(${0}deg)`;
+// 		text.forEach((e) => {
+// 			e.style.display = 'block';
+// 		});
+// 	} else {
+// 		headerMenu.classList.add('change--size');
+// 		headerMenu.style.width = `${_header}%`;
+// 		main.style.width = `${_main}%`;
+// 		logoIcon.style.transform = `rotate(${-180}deg)`;
+// 		text.forEach((e) => {
+// 			e.style.display = 'none';
+// 		});
+// 	}
+// }
+

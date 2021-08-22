@@ -11,6 +11,10 @@
 .change--size{
   color: black;
 }
+.syntax{
+	overflow: auto !important;
+	border-radius: 5px;
+}
 .text--primary {
   color: var(--color-primary);
 }

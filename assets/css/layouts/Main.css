@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: 1s;
 }
 .header__main{
   padding: 1rem;
@@ -12,6 +13,7 @@
   border-bottom: 1.5px solid rgba(237,242,247,1);
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 .main-navbar__wrapper {
   display: flex;
@@ -37,3 +39,10 @@
   max-width: 1024px;
   margin: 0 auto;
 }
+/* for responsive */
+main.main.main--changeSizeXl{ width: 95%; }
+main.main.main--changeSizeLg{ width: 96%; }
+main.main.main--changeSizeNb{ width: 90%; }
+main.main.main--changeSizeTb{ width: 88%; }
+main.main.main--changeSizeMb{ width: 100%; }
+/* end for responsive */

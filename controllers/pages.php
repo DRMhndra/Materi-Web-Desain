@@ -12,5 +12,5 @@
 			}
 		}
 	}else{
-		echo "yes";
+		include_once 'materi/html/perkenalan.html';
 	}

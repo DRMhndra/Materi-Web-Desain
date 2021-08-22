@@ -14,11 +14,11 @@
         </a>
         <ul class="navbar__wrapper dropdown__list">
           <li class="navbar__item">
-            <a href="#" class="navbar__link text--primary">
+            <a href="index.php?page=perkenalan" class="navbar__link text--primary">
               <span class="text__link">Perkenalan</span>
             </a>
           <li class="navbar__item">
-            <a href="#" class="navbar__link text--primary">
+            <a href="index.php?page=htmlTag" class="navbar__link text--primary">
               <span class="text__link">Element & Komentar</span>
             </a>
           </li>

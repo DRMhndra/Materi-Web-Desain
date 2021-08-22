@@ -1,6 +1,7 @@
 .footer__wrapper {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   border-top: 1.5px solid rgba(237,242,247,1);
   font-size: .9rem;
 }
