@@ -12,7 +12,7 @@
           <img src="./assets/icons/icon-html5.svg" alt="" class="navbar__icon">
           <span class="text__link ml--1">HTML</span>
         </a>
-        <ul class="navbar__wrapper dropdown__list">
+        <ul class="navbar__item dropdown__list">
           <li class="navbar__item">
             <a href="index.php?page=perkenalan" class="navbar__link text--primary">
               <span class="text__link">Perkenalan</span>
