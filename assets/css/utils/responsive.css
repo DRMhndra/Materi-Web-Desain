@@ -1,0 +1,32 @@
+@media only screen and (min-width: 1200px) and (max-width: 1920px) {
+	.header{ width: 20%; }
+	.main{ width: 80%; }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+	.header{ width: 20%; }
+	.main{ width: 80%; }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.header{ width: 25%; }
+	.main{ width: 85%; }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	.header{ width: 30%; }
+	.main{ width: 70%; }
+}
+@media only screen and (max-width: 480px) {
+	.header{ width: 0%; }
+	.main{ width: 100%; }
+}
+
+.header--changeSizeXl{ width: 5%; }
+.header--changeSizeLg{ width: 6%; }
+.header--changeSizeNb{ width: 7%; }
+.header--changeSizeTb{ width: 11%; }
+.header--changeSizeMb{ width: 100%; }
+
+main.main.main--changeSizeXl{ width: 95%; }
+main.main.main--changeSizeLg{ width: 94%; }
+main.main.main--changeSizeNb{ width: 93%; }
+main.main.main--changeSizeTb{ width: 88%; }
+main.main.main--changeSizeMb{ width: 100%; }

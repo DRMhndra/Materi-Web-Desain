@@ -12,9 +12,19 @@
   color: black;
 }
 .syntax{
-	overflow: auto !important;
+	overflow: auto;
 	border-radius: 5px;
 }
 .text--primary {
   color: var(--color-primary);
+}
+@keyframes animate--fadeInDown {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
 }

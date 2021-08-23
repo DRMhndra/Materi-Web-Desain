@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+:root {
+  /* --background-primary: #222831; */
+  --background-primary: #202033;
+  --background-secondary: rgba(13, 13, 13, 0.08);
+  --background-third: #353550;
+  --color-primary: #222831;
+  --color-secondary: #f9f0f0;
+}
 html {
   box-sizing: border-box;
   font-size: 16px;

@@ -3,16 +3,17 @@
 @import url('./base/typography.css');
 
 /* utils */
-@import url('./utils/variable.css');
 @import url('./utils/utilities.css');
-
-/* component */
-/* like a button, forms for reusable */
 
 /* layout */
 @import url('./layouts/Header.css');
 @import url('./layouts/Main.css');
 @import url('./layouts/Footer.css');
+
+@import url('./utils/responsive.css');
+
+/* component */
+/* like a button, forms for reusable */
 
 /* vendors */
 

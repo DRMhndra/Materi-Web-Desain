@@ -25,16 +25,13 @@ let text = document.querySelectorAll('.text__link');
 let logoIcon = document.querySelector('.navbarBrand--icon');
 
 buttonNav.addEventListener('click', function (_event) {
-	if (screenWidth > 1200 && screenWidth <= 1920) {
+	if (screenWidth >= 1200 && screenWidth < 1920) {
 		changeSizeSideBar('header--changeSizeXl', 'main--changeSizeXl');
-	} else	if (screenWidth > 1024 && screenWidth <= 1200 ) {
-		// changeSizeSideBar(6, 94);
+	} else	if (screenWidth >= 1024 && screenWidth < 1200 ) {
 		changeSizeSideBar('header--changeSizeLg', 'main--changeSizeLg');
-	} else	if (screenWidth > 768 && screenWidth <= 1024) {
-		// changeSizeSideBar(10, 90);
+	} else	if (screenWidth >= 768 && screenWidth < 1024) {
 		changeSizeSideBar('header--changeSizeNb', 'main--changeSizeNb');
-	} else if (screenWidth > 480 && screenWidth <= 768) {
-		// changeSizeSideBar(11, 89);
+	} else if (screenWidth >= 480 && screenWidth < 768) {
 		changeSizeSideBar('header--changeSizeTb', 'main--changeSizeTb');
 	}else {
 		headerMenu.style.width = `100%`;
@@ -45,8 +42,12 @@ buttonNav.addEventListener('click', function (_event) {
 })	
 
 function changeSizeSideBar(_header, _main) {
-	console.log(_header, _main);
 	if (headerMenu.classList.contains('change--size')) {
+		if (headerMenu.classList.contains('header--changeSizeNb')) {
+			document.querySelectorAll('.navbar__link').forEach( e => {
+				e.style.justifyContent = 'flex-start';
+			});
+		}
 		headerMenu.classList.remove('change--size');
 		headerMenu.classList.toggle(`${_header}`);
 		main.classList.toggle(`${_main}`);
@@ -56,6 +57,11 @@ function changeSizeSideBar(_header, _main) {
 		});
 	} else {
 		headerMenu.classList.add('change--size');
+		if (_header == "header--changeSizeNb") {
+			document.querySelectorAll('.navbar__link').forEach( e => {
+				e.style.justifyContent = 'center';
+			});
+		}
 		headerMenu.classList.toggle(`${_header}`);
 		main.classList.toggle(`${_main}`);
 		logoIcon.classList.toggle(`spinLogo`);
@@ -65,26 +71,3 @@ function changeSizeSideBar(_header, _main) {
 		});
 	}
 }
-
-
-// function changeSizeSideBar(_header, _main) {
-// 	console.log(_header, _main);
-// 	if (headerMenu.classList.contains('change--size')) {
-// 		headerMenu.classList.remove('change--size');
-// 		headerMenu.style.width = `20%`;
-// 		main.style.width = `80%`;
-// 		logoIcon.style.transform = `rotate(${0}deg)`;
-// 		text.forEach((e) => {
-// 			e.style.display = 'block';
-// 		});
-// 	} else {
-// 		headerMenu.classList.add('change--size');
-// 		headerMenu.style.width = `${_header}%`;
-// 		main.style.width = `${_main}%`;
-// 		logoIcon.style.transform = `rotate(${-180}deg)`;
-// 		text.forEach((e) => {
-// 			e.style.display = 'none';
-// 		});
-// 	}
-// }
-

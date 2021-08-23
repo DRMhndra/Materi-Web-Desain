@@ -1,5 +1,4 @@
 .main {
-  width: 80%;
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -40,9 +39,5 @@
   margin: 0 auto;
 }
 /* for responsive */
-main.main.main--changeSizeXl{ width: 95%; }
-main.main.main--changeSizeLg{ width: 96%; }
-main.main.main--changeSizeNb{ width: 90%; }
-main.main.main--changeSizeTb{ width: 88%; }
-main.main.main--changeSizeMb{ width: 100%; }
+
 /* end for responsive */
