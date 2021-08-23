@@ -49,10 +49,19 @@ buttonNav.addEventListener('click', function (_event) {
 		closeDropdownFirst();
 		changeSizeSideBar('header--changeSizeTb', 'main--changeSizeTb');
 	}else {
-		headerMenu.style.width = `100%`;
-		main.style.width = `100%`;
-		headerMenu.style.position = 'absolute';
-		headerMenu.style.zIndex = '2';
+		closeDropdownFirst();
+		headerMenu.classList.add('header__mobile--open');
+		main.classList.add('main__mobile--close');
+		let buttonCloseMobile = document.querySelector('.close--mobile');
+		buttonCloseMobile.addEventListener('click', function() {
+				headerMenu.classList.add('temp');
+			setTimeout(() => {
+				headerMenu.classList.remove('header__mobile--open');
+				headerMenu.classList.remove('temp');
+			}, 1000);
+			main.classList.remove('main__mobile--close');
+
+		});
 	}
 });
 

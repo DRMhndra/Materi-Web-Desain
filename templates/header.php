@@ -69,5 +69,8 @@
         </ul>
       </li>
     </ul>
+    <div class="close__button">
+        <button class="close--mobile">Close</button>
+    </div>
   </nav>
 </header>

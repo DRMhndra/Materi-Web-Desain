@@ -3,7 +3,7 @@
   position: sticky;
   top: 0;
   left: 0;
-  overflow: auto;
+  overflow: hidden auto;
   height: 100vh;
   transition: 1s ease-out;
 }
@@ -13,7 +13,22 @@
 .header::-webkit-scrollbar-thumb {
   background-color: #978d9c;
 }
-.navbar{ position: relative; }
+.navbar{ 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+.close__button{
+  background-color: var(--background-primary);
+  padding: 10px;
+}
+.close--mobile{
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+}
 .navbar_wrapper {
   display: flex;
   flex-direction: column;
@@ -63,6 +78,3 @@
 .ml--1{
   margin-left: .9rem;
 }
-/* for responsive */
-
-/* end for responsive */
