@@ -17,9 +17,25 @@
             <a href="index.php?page=perkenalan" class="navbar__link text--primary">
               <span class="text__link">Perkenalan</span>
             </a>
+          </li>
           <li class="navbar__item">
             <a href="index.php?page=htmlTag" class="navbar__link text--primary">
               <span class="text__link">Element & Komentar</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=htmlHeader" class="navbar__link text--primary">
+              <span class="text__link">Judul & Formatting Teks</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=htmlAttr" class="navbar__link text--primary">
+              <span class="text__link">Attribute,link,List & Tabel</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=htmlMedia" class="navbar__link text--primary">
+              <span class="text__link">Html Media</span>
             </a>
           </li>
         </ul>

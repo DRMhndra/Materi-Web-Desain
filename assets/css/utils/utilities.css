@@ -18,6 +18,14 @@
 .text--primary {
   color: var(--color-primary);
 }
+.tugas{
+	background-color: #ff4f4f;
+	border-radius: 5px;
+	margin-top: 5px;
+	padding: 8px;
+	color: white;	
+}
+.tugas > p{ margin: 0; }
 @keyframes animate--fadeInDown {
 	from {
 		opacity: 0;
@@ -28,3 +36,4 @@
 		transform: translate3d(0, 0, 0);
 	}
 }
+

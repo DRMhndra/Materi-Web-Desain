@@ -7,8 +7,8 @@
             <img src="./assets/icons/icon-menu.svg" alt="menu bar" class="main-navbar__menu">
           </button>
         </li>
-        <li class="main-navbar__item">Testing</li>
-        <li class="main-navbar__item">Testing</li>
+        <li class="main-navbar__item"><h3>Web Desain</h3></li>
+        <li class="main-navbar__item">#</li>
       </ul>
     </nav>
   </header>
