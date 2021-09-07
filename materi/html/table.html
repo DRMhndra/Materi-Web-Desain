@@ -1,0 +1,156 @@
+<article>
+  <div class="article__card">
+		<h3 class="article--heading">Table</h3>
+		<div class="article__body">
+			<p>Element HTML table digunakan untuk menyusun data secara baris dan kolom.</p>
+			<div class="article__code">
+				<pre class="syntax"><code data-language="html"><table>
+<thead>
+ <tr>
+  <th>No</th>
+  <th>Nama</th>
+  <th>NPM</th>
+  <th>Umur</th>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td>1</td>
+  <td>data</td>
+  <td>20212182</td>
+  <td>17</td>
+ </tr>
+ <tr>
+  <td>2</td>
+  <td>data</td>
+  <td>20212183</td>
+  <td>18</td>
+ </tr>
+</tbody>
+</table></code></pre>
+			</div>
+			<div class="article__result">
+				<table border="1" align="center">
+					<thead>
+						<tr>
+							<th>No</th>
+							<th>Nama</th>
+							<th>NPM</th>
+							<th>Umur</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>data</td>
+							<td>20212182</td>
+							<td>17</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>data</td>
+							<td>20212183</td>
+							<td>18</td>
+						</tr>
+					</tbody>
+				</table>	
+			</div>
+			<h3 class="article--subheading">Menggabungkan kolom</h3>
+			<div class="article__body--subheading">
+				<p>Dalam menggabungkan kolom dapat menambahkan attribute <code>colspan</code> dengan nilai dari kolom yang akan digabungkan</p>
+				<div class="article__code">
+					<pre class="syntax"><code data-language="html"><table border="1" align="center">
+<thead>
+<tr>
+  <th>Kolom 1</th>
+  <th>Kolom 2</th>
+  <th>Kolom 3</th>
+ </tr>
+</thead>
+<tbody>
+<tr>
+ <td>Baris 2 Kolom 1</td>
+ <td>Baris 2 Kolom 2</td>
+ <td>Baris 2 Kolom 3</td>
+</tr>
+<tr>
+ <td>Baris 3 Kolom 1</td>
+ <td colspan="2">Gabungan Baris 3 Kasdfsolom 2 dan Baris 3 Kolom 3</td>
+</tr>
+</tbody>
+</table></code></pre>
+			</div>
+				<div class="article__result">
+					<table border="1" align="center">
+						<thead>
+							<tr>
+								<th>Kolom 1</th>
+								<th>Kolom 2</th>
+								<th>Kolom 3</th>
+							</tr>
+						</thead>
+							<tbody>
+								<tr>
+									<td>Baris 2 Kolom 1</td>
+									<td>Baris 2 Kolom 2</td>
+									<td>Baris 2 Kolom 3</td>
+								</tr>
+								<tr>
+									<td>Baris 3 Kolom 1</td>
+									<td colspan="2">Gabungan Baris 3 Kolom 2 dan Baris 3 Kolom 3</td>
+								<tr>
+							</tbody>
+						</table>
+				</div>
+			</div>
+		<h3 class="article--subheading">Menggabungkan Baris</h3>
+		<div class="article__body--subheading">
+			<p>Dalam menggabungkan barus dapat menambahkan attribute <code>rowspan</code> dengan nilai dari baris yang akan digabungkan</p>
+			<div class="article__code">
+				<pre class="syntax"><code data-language="html"><table border="1" align="center">
+<thead>
+<tr>
+ <th>Kolom 1</th>
+ <th>Kolom 2</th>
+ <th>Kolom 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="2">Gabungan Baris 2 Kolom 1 dan Baris 3 Kolom 1</td>
+  <td>Baris 2 Kolom 2</td>
+  <td>Baris 2 Kolom 3</td>
+</tr>
+<tr>
+  <td>Baris 3 Kolom 2</td>
+  <td>Baris 3 Kolom 3</td>
+</tr>
+</tbody>
+</table></code></pre>
+			</div>
+			<div class="article__result">
+				<table border="1" align="center">
+					<thead>
+					 <tr>
+						<th>Kolom 1</th>
+						<th>Kolom 2</th>
+						<th>Kolom 3</th>
+					 </tr>
+					</thead>
+					<tbody>
+					 <tr>
+						<td rowspan="2">Gabungan Baris 2 Kolom 1 dan Baris 3 Kolom 1</td>
+						<td>Baris 2 Kolom 2</td>
+						<td>Baris 2 Kolom 3</td>
+					 </tr>
+					 <tr>
+						<td>Baris 3 Kolom 2</td>
+						<td>Baris 3 Kolom 3</td>
+					 <tr>
+					</tbody>
+					</table>
+			</div>
+		</div>
+	</div>
+	</div>
+</article>

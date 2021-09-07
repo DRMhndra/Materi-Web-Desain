@@ -20,7 +20,7 @@
           </li>
           <li class="navbar__item">
             <a href="index.php?page=htmlTag" class="navbar__link text--primary">
-              <span class="text__link">Element & Komentar</span>
+              <span class="text__link">Attribute & Element</span>
             </a>
           </li>
           <li class="navbar__item">
@@ -30,12 +30,32 @@
           </li>
           <li class="navbar__item">
             <a href="index.php?page=htmlAttr" class="navbar__link text--primary">
-              <span class="text__link">Attribute,link,List & Tabel</span>
+              <span class="text__link">List & Link</span>
             </a>
           </li>
           <li class="navbar__item">
             <a href="index.php?page=htmlMedia" class="navbar__link text--primary">
               <span class="text__link">Html Media</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=htmlTable" class="navbar__link text--primary">
+              <span class="text__link">Tabel</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=htmlFormulir" class="navbar__link text--primary">
+              <span class="text__link">Html Formulir</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=semanticTag" class="navbar__link text--primary">
+              <span class="text__link">Semantic Tag</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=htmlLink" class="navbar__link text--primary">
+              <span class="text__link">Html Link</span>
             </a>
           </li>
         </ul>
@@ -54,6 +74,11 @@
           <li class="navbar__item">
             <a href="" class="navbar__link text--primary">
               <span class="text__link">Penulisan CSS</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=cssDisplay" class="navbar__link text--primary">
+              <span class="text__link">Display</span>
             </a>
           </li>
         </ul>

@@ -1,0 +1,8 @@
+.form--group { box-sizing: border-box; }
+.form--control {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin-bottom: .5rem;
+  padding: .5rem;
+}

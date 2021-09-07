@@ -1,33 +1,25 @@
-<article>
-	<section>
-		<h2>Pengenalan HTML</h2>
-		<p>
-			HTML adalah singkatan dari HyperText Markup Language.
-			Tidak seperti skrip atau bahasa pemrograman yang menggunakan skrip untuk menjalankan fungsi, bahasa markup menggunakan tag untuk mengidentifikasi konten. 
-		</p>
-		<h2>File yang dibutuhkan untuk belajar web desain</h2>
-		<ol>
-			<li>WEB Server (optional) contoh Xampp,lamp,ataupun mamp</li>
-			<li>Text editor contoh atom,sublime,notepad++ ataupun visual studio code</li>
-		</ol>
-		<h2>Menginstall dan Menjalankan WEB Server</h2>
-		<ol>
-			<li>Mendownload dari website resmi <a href="https://www.apachefriends.org/download.html" target="_blank">apache</a></li>
-			<li>download versi terbarunya</li>
-			<li>lalu install</li>
-			<li>lalu jalankan web server apache</li>
-		</ol>
-	</section>
-	<section>
-		<h2>Struktur WEB</h2>
-		<ul>
-			<li>HTML : Struktur</li>
-			<li>CSS : Presentasi</li>
-			<li>JS : Perilaku</li>
-		</ul>
-		<h3>Strukur untuk membuat HTML</h3>
-		<pre class="syntax"><code data-language="html">
-&lt;!DOCTYPE html&gt;
+<article class="article">
+	<div class="article__card">
+		<h3 class="article--heading">HTML</h3>
+		<div class="article__body">
+			<p>HTML adalah singkatan dari <span class="highlight--important">Hyper Text Markup Language</span>.Tidak seperti bahasa pemrograman yang menggunakan script untuk menjalankan codenya,bahasa markup menggunakan tag untuk mengidentifikasi konten. 
+			</p>
+		</div>
+	</div>
+	<div class="article__card">
+		<h3 class="article--heading">Struktur WEB</h3>
+		<div class="article__body">
+			<ul class="list--unordered">
+				<li>HTML : Struktur Dasar Website</li>
+				<li>CSS : Presentasi & mempercantik Website</li>
+				<li>JS : Perilaku dari suatu element</li>
+			</ul>
+		</div>
+	</div>
+	<div class="article__card">
+		<div class="article__code">
+			<h3>Strukur untuk membuat HTML</h3>
+			<pre class="syntax"><code data-language="html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
  &lt;title&gt;&lt;/title&gt;
@@ -35,15 +27,55 @@
 &lt;body&gt;
 
 &lt;/body&gt;
-&lt;/html&gt;
-		</code></pre>
-		<p>Struktur dokumen HTML bertipe sandwich,karena bertipe sandwich maka memiliki pembuka dan penutup.</p>
-		<ul style="list-style: none;">
-			<li>< <code>!DOCTYPE html</code> > : digunakan memberitahu web broswer bahwa dokumen yang akan di muat bertipe html</li>
-			<li>< <code> html</code> > : digunakan membuat sebuah dokumen html</li>
-			<li>< <code> head</code> > : berisi informasi tentang web contohnya adalah judul</li>
-			<li>< <code> title</code> > : digunakan judul dari html</li>
-			<li>< <code> body</code> > : struktur utama dalam membuat html,element yang kita buat akan ditampilkan di web browser</li>
-		</ul>
-	</section>
+&lt;/html&gt;</code></pre>
+			<p>Struktur dokumen HTML bertipe <span class="highlight--important">sandwich</span>,karena bertipe layaknya sebuah sandwich maka memiliki pembuka dan penutup.</p>
+			<ul>
+				<li><code>!DOCTYPE html</code> : digunakan memberitahu web broswer bahwa dokumen yang akan di muat bertipe html</li>
+				<li><code> html</code> : digunakan membuat sebuah dokumen html</li>
+				<li><code> head</code> : berisi informasi tentang web</li>
+				<li><code> title</code> : digunakan judul dari html</li>
+				<li><code> body</code> : struktur utama dalam membuat html,element yang kita buat akan ditampilkan di web browser</li>
+			</ul>
+		</div>
+	</div>
+	<div class="article__card">
+		<h3 class="article--heading">File yang dibutuhkan untuk belajar web desain</h3>
+		<div class="article__body">
+			<ol class="list--number">
+				<li>WEB Server (optional) contoh: Xampp,lamp,ataupun mamp</li>
+				<li>Text editor contoh: atom,sublime,notepad++ ataupun visual studio code</li>
+			</ol>
+		</div>
+	</div>
+	<div class="article__card">
+		<h3 class="article--heading">Menginstall dan Menjalankan WEB Server</h3>
+		<div class="article__body">
+			<ol class="list--number">
+				<li>Mendownload dari website resmi <a href="https://www.apachefriends.org/download.html" target="_blank" class="link--to">apache</a></li>
+				<li>Install</li>
+				<li>Jalankan web server apache</li>
+			</ol>
+		</div>
+	</div>
+	<div class="article__card">
+		<h3 class="article--heading">Cara membuat file HTML</h3>
+		<div class="article__body">
+			<p>Untuk membuat file html dapat menggunakan notepad tetapi untuk notepad belum tersedia auto-completion sehingga mengharuskan menuliskan pembuka serta penutup secara manual,agar file teridentifikasi sebagai HTML dapat menggunakan ekstensi <span class="highlight--important">.html</span></p>
+			<div class="article__code">
+				<pre class="syntax"><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+ &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ <p>Hello World!</p>
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+			</div>
+			<p>simpan file dengan nama <span class="highlight--important">belajar-html-1.html</span></p>
+			<div class="article__result">
+				<p style="text-align: center;">Hello World!</p>
+			</div>
+		</div>
+	</div>
 </article>

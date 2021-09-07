@@ -16,6 +16,7 @@
 @media only screen and (min-width: 480px) and (max-width: 768px) {
 	.header{ width: 30%; }
 	.main{ width: 70%; }
+	.image_contoh{ width: 100%; }
 	.close__button{ display: none; }
 }
 @media only screen and (max-width: 480px) {
@@ -27,6 +28,8 @@
 		position: sticky;
 		bottom: 0;
 	}
+	.image_contoh{ width: 100%; }
+	p{ font-size: 1.1rem; }
 }
 
 .header--changeSizeXl{ width: 5%; }
@@ -44,7 +47,7 @@
 .header__mobile--open{
 	width: 100%;
 	position: absolute;
-	z-index: 2;
+	z-index: 3;
 }
 .temp{ width: 0%; }
 .main__mobile--close{

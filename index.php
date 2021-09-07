@@ -7,16 +7,16 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>Web Desain</title>
   <link rel="stylesheet" href="./assets/css/main.css">
-	<link rel="stylesheet" href="./assets/rainbow-master/themes/css/github.css" media="screen"> 
+  <link rel="stylesheet" href="./assets/rainbow-master/themes/css/github.css" media="screen"> 
 </head>
 <body>
   <?php include_once './templates/header.php' ?>
   <?php include_once './templates/main.php' ?>
   <script src="./assets/js/script.js"></script>
   <script type="text/javascript" src="./assets/rainbow-master/dist/rainbow.js"></script>
-	<script type="text/javascript" src="./assets/rainbow-master/src/language/generic.js"></script>
-	<script type="text/javascript" src="./assets/rainbow-master/src/language/html.js"></script>
-	<script type="text/javascript" src="./assets/rainbow-master/src/language/css.js"></script>
-	<script type="text/javascript" src="./assets/rainbow-master/src/language/javascript.js"></script>
+  <script type="text/javascript" src="./assets/rainbow-master/src/language/generic.js"></script>
+  <script type="text/javascript" src="./assets/rainbow-master/src/language/html.js"></script>
+  <script type="text/javascript" src="./assets/rainbow-master/src/language/css.js"></script>
+  <script type="text/javascript" src="./assets/rainbow-master/src/language/javascript.js"></script>
 </body>
 </html>

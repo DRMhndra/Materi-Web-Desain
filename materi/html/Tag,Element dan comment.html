@@ -1,28 +1,56 @@
-<article>
-	<section>
-		<h2>Element HTML</h2>
-		<p>
-			HTML terdiri dari banyak elemen,sebuah elemen HTML ditulis menggunakan tag awal dan tag akhir, dan dengan konten di antaranya.
-		</p>
-		<img src="assets/img/element.jpg" alt="element html" class="image_contoh">
-		<p>
-			Sebuah element html dapat berisi element html yang lainnya atau bisa disebut nested element
-		</p>
-		<pre class="syntax"><code data-language="html">&lt;div&gt;
- &lt;h1&gt;Ini Judul&lt;/h1&gt;
- &lt;p&gt;Ini Paragraf&lt;/p&gt;
-&lt;/div&gt;</code></pre>
-	</section>
-	<section>
-		<h2>Membuat Komentar</h2>
-		<p>
-			Komentar berguna untuk memberi informasi tambahan soal kode yang kita tuliskan,mempermudah orang lain yang ketika melihat kode kita 
-		</p>
-		<pre class="syntax"><code data-language="html"><!-- ini isi komentar --></code></pre>
-		<p>
-			Komentar di bawah ini tidak akan di tampilkan oleh web browser ketika dijalankan,
-			<!-- hallo semua -->
-			untuk short-cut membuat komentar adalah <code>ctrl + /</code>
-		</p>
-	</section>
+<article class="article">
+	<div class="article__card">
+		<h3 class="article--heading">Element HTML</h3>
+		<div class="article__body">
+			<p>HTML terdiri dari banyak elemen,sebuah elemen HTML ditulis menggunakan tag awal dan tag akhir, dan dengan 			konten di antaranya.</p>
+			<img src="assets/img/element.jpg" alt="element html" class="image_contoh">
+			<p> Sebuah element html dapat berisi element html yang lainnya atau bisa disebut nested element.</p>
+			<div class="article__code">
+				<pre class="syntax"><code data-language="html"><div>
+ <h1>Ini Judul</h1>
+ <p>Ini Paragraf</p>
+</div></code></pre>
+			</div>
+			<h3 class="article--subheading">Self-closing Tag</h3>
+			<div class="article__body--subheading">
+				<p><span class="highlight--important">Self-closing Tag</span> atau yang disebut tag penutup diri hanya memiliki tag pembuka,ada beberapa element html yang bersifat <span class="highlight--important">self-closing tag</span> diantaranya: </p>
+				<div class="article__code">
+					<pre class="syntax"><code data-language="html"><br /> <!-- membuat garis baru -->
+<hr /> <!-- membuat garis horizontal -->
+<img src="#" alt ="gambar" width="" height="" />
+<input type="text" value="" name="" placeholder="" /></code></pre>
+				</div>
+				<p>Element Self-closing tag biasanya memiliki attribute tambahan untuk memberikan informasi.</p>
+			</div>
+		</div>
+	</div>
+	<div class="article__card">
+		<h3 class="article--heading">Attribute</h3>
+		<div class="article__body">
+			<p>Attribute adalah informasi tambahan yang terdapat dalam element html,bisanya setiap attribute memiliki sebuah value(isi).</p>
+			<div class="article__code">
+			<pre class="syntax"><code data-language="html"><p id="tests" class="judul" style="color: blue; text-align: center;">
+ Paragraph ini berwarna biru
+</p></code></pre>
+			</div>
+			<div class="article__result">
+				<p style="color: blue;" align="center">paragraph ini berwana biru</p>
+			</div>
+			<p>Beberapa element html yang harus memiliki attribute wajib</p>	
+			<ol class="list--unordered">
+				<li><span class="highlight--important">a</span> atau link,attribute wajib yaitu href </li>
+				<li><span class="highlight--important">img</span> attribute wajib yaitu src dan alt </li>
+				<li><span class="highlight--important">input</span> attribue wajib type dan name</li>
+				<li><span class="highlight--important">form</span> attribute wajibnya action dan method</li>
+			</ol>
+		</div>
+	</div>
+	<div class="article__card">
+		<h3 class="article--heading">Komentar</h3>
+		<div class="article__body">
+			<p> Komentar berguna untuk memberi informasi tambahan soal kode yang kita tuliskan,mempermudah orang lain membaca serta mengerti ketika melihat kode tersebut</p>
+			<pre class="syntax"><code data-language="html"><!-- ini isi komentar --></code></pre>
+			<p> Komentar tidak akan di pernah ditampilkan oleh web browser ketika dijalankan tetapi akan tetap terlihat ketika melakukan inspect element,<code>ctrl + /</code> adalah short-cut membuat komentar.</p>
+		</div>
+	</div>
 </article>

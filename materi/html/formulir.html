@@ -1,0 +1,75 @@
+<article class="article">
+	<div class="article__card">
+		<h3 class="article--heading">Form (Formulir)</h3>
+		<div class="article__body">
+			<p>Form adalah element html yang digunakan untuk mengumpulkan informasi dari seorang pengguna.</p>
+			<div class="article__code">
+				<pre class="syntax"><code data-language="html"><form action="" method="">
+ <input type="text" name="username">
+ ......
+</form></code></pre>
+			</div>
+			<p>form memiliki attribute wajib yaitu <span class="highlight--important">action</span> dan <span class="highlight--important">method</span></p>
+			<ul class="list--unordered">
+				<li><span class="highlight--important">action</span> digunakan untuk mengirim hasil informasi ke tempat tertentu/server</li>
+				<li><span class="highlight--important">method</span> adalah cara pengiriman data bisa menggunakan <span class="highlight--important">POST</span> ataupun <span class="highlight--important">GET</span></li>
+			</ul><br />
+			<section class="example__code">
+				<form action="" method="GET" class="form--group">
+					<input type="text" name="usrname" class="form--control" placeholder="Username">
+					<input type="password" name="passwd" class="form--control" placeholder="Password">
+					<input type="submit" name="submit" value="Simpan">
+				</form><br />
+				<p>Formulir dengan metode POST</p><br />
+				<form action="" method="POST" class="form--group">
+					<input type="text" name="usrname" class="form--control" placeholder="Username">
+					<input type="password" name="passwd" class="form--control" placeholder="Password">
+					<input type="submit" name="submit" value="Simpan">
+				</form>
+			</section>
+		</div>
+	</div>
+	<div class="article__card">
+		<h3 class="article--heading">Perbedaan Method POST dan GET</h3>
+		<div class="article__body">
+			<dl>
+				<dt>GET</dt>
+				<dd>Method GET akan menampilkan informasi di dalam url bar</dd>
+				<dd>Method GET digunakan untuk perpindahan halaman dalam HTML</dd>
+				<dt>POST</dt>
+				<dd>Method POST tidak akan menampilkan informasi di url bar</dd>
+				<dd>Method POST digunakan untuk menyimpan informasi yang bersifat privasi</dd>
+			</dl>
+			<p>Didalam form dapat menggunakan berbagai macam element input untuk mengumpulkan informasi di antaranya: </p>
+			<ul class="list--unordered">
+				<li>text</li>
+				<li>radio</li>
+				<li>checkbox</li>
+				<li>password</li>
+				<li>tel</li>
+				<li>number</li>
+				<li>submit</li>
+				<li>dll</li>
+			</ul>
+			<h3 class="article--subheading">Teks</h3>
+			<div class="article__body--subheading">
+				<div class="article__code"></div>
+				<div class="article__result">
+					<input type="text" class="form--control" placeholder="username">
+				</div>
+				<div class="article__result">
+					<textarea name="" id="" cols="30" rows="10"></textarea>
+				</div>
+				<div class="article__result">
+					<input type="color" name="" id="">
+				</div>
+				<div class="article__result">
+					<input type="tel" name="" id="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="tugas">
+		<p>Tugas,Pahami serta buat form sederhana yang memiliki method GET ataupun POST</p>
+	</section>
+</article>

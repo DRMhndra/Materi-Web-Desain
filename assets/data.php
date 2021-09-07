@@ -14,7 +14,11 @@ $urls = [
 	],
 	[
 		"title" => "htmlAttr",
-		"url" => "html/Attribute,list.html"
+		"url" => "html/list.html"
+	],
+	[
+		"title" => "htmlTable",
+		"url" => "html/table.html"
 	],
 	[
 		"title" => "htmlMedia",
