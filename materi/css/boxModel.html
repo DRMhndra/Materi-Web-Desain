@@ -1,0 +1,59 @@
+<article class="article">
+	<div class="article__card">
+		<h3 class="article--heading">Box Model</h3>
+		<div class="article__body">
+			<p>Setiap element html diibaratkan sebuah kotak layaknya kotak pada umumnya pasti terdapat isi,tinggi,lebar, hingga lapisan luar di Html kita menyebutnya padding,border,dan margin.</p>
+			<figure>
+				<img src="https://www.w3.org/TR/CSS2/images/boxdim.png" alt="penjelasan box model" class="image_contoh" loading="lazy">
+			 	<figcaption style="text-align: center;">Ilustrasi dari W3C</figcaption>
+			</figure> 
+			<p>Secara default kotak akan mengikuti ukuran dari sebuah content di dalamnya, namun dapat diatur menggunakan css.</p>
+			<h3 class="article--subheading">Content</h3>
+			<div class="article__body--subheading">
+				<p>Content area adalah tempat menempatkan content dari sebuah element yang dapat berupa text, image, table dan yang lainnya.</p>
+			</div>
+			<h3 class="article--subheading">Padding</h3>
+			<div class="article__body--subheading">
+				<p>Padding area adalah bagian yang membatasi bagian antara border dari suatu element dengan content, ketebalan padding dapat ditentukan satu persatu ataupun menggunakan shorthand padding properties.</p>
+				<div class="article__code">
+					<pre class="syntax"><code data-language="css">.box {
+ padding-top: 10px;
+ padding-right: 15px;
+ padding-bottom: 20px;
+ padding-left: 25px;
+ <!-- shorthand -->
+ padding: 10px 15px 20px 25px;
+}</code></pre>
+				</div>
+			</div>
+			<h3 class="article--subheading">Border</h3>
+			<div class="article__body--subheading">
+				<p>Border area adalah garis yang mengelilingi content serta padding, ketebalan dan bentuk dari border itu sendiri pun dapat diatur satu persatu ataupun menggunakan shorthand border properties.</p>
+				<div class="article__code">
+					<pre class="syntax"><code data-language="css">.box {
+ border-top: 10px;
+ border-right: 15px;
+ border-bottom: 20px;
+ border-left: 25px;
+ <!-- shorthand -->
+ border: 1px;
+}</code></pre>
+				</div>
+			</div>
+			<h3 class="article--subheading">Margin</h3>
+			<div class="article__body--subheading">
+				<p>Margin area mengatur jarak antar element yang ada di dalam html ukuran margin dapat diatur satu persatu ataupun menggunakan shorthand margin properties, untuk margin dan padding sifatnya berbentuk transparan.</p>
+				<div class="article__code">
+					<pre class="syntax"><code data-language="css">.box {
+ margin-top: 10px;
+ margin-right: 15px;
+ margin-bottom: 20px;
+ margin-left: 25px;
+ <!-- shorthand -->
+ margin: 10px 15px 20px 25px;
+}</code></pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>

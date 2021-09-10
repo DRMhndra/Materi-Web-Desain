@@ -1,0 +1,89 @@
+<article class="article">
+	<div class="article__card">
+      <h3 class="article--heading">Penulisan CSS</h3>
+      <div class="article__body">
+      	<p>Didalam menuliskan syntax CSS terdapat 2 hal yang di perlukan,yaitu</p><br />
+      	<ol class="list--number">
+      		<li>Element yang akan menerapkan style yang biasa di sebut Selector </li>
+			<li>Intruksi style yang akan di terapkan dalam element tersebut </li>
+      	</ol><br />
+      	<p>Intruksi style css dapat menerapkan lebih dari 1 dengan memisahkan antara style dengan tanda <code>;</code></p>
+      	<div class="article__code">
+      		<pre class="syntax"><code data-language="css">h1 { color : black; }
+/*contoh style lebih dari 1*/
+p {
+ color: black;
+ font-size: 20px;
+}</code></pre>
+      	</div>
+      </div>
+    </div>
+    <div class="article__card">
+    	<h3 class="article--heading">Menambahkan file CSS kedalam HTML</h3>
+    	<div class="article__body">
+    		<p>Terdapat 3 cara untuk memasukan/menuliskan file csss,yaitu : </p><br />
+			<ol class="list--number">
+				<li>Inline</li>
+				<li>Internal</li>
+				<li>Eksternal</li>
+			</ol>
+			<h3 class="article--subheading">Inline</h3>
+			<div class="article__body--subheading">
+				<p>Memasukan syntax css secara langsung ke dalam element html disebut dengan inline, untuk memasukannya menggunakan attribute <code>style</code></p>
+				<div class="article__code">
+					<pre class="syntax"><code data-language="html"><p style="color: blue; font-size: 18px;">Hello World</p></code></pre>
+				</div>
+				<div class="article__result">
+					<p style="color: blue; font-size: 18px; text-align: center">Hello World</p>
+				</div>
+			</div>
+			<h3 class="article--subheading">Internal</h3>
+			<div class="article__body--subheading">
+				<p>memasukan syntax didalam file html tepatnya di antara tag <code>head</code> dengan menggunakan tag <code>style</code> disebut dengan Internal Css</p>
+				<div class="article__code">
+					<pre class="syntax"><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+ &lt;title&gt;Internal Css&lt;/title&gt;
+ &lt;style&gt;
+  .box {
+   width: 100%;
+   height: 400px;
+   background-color: grey;
+  }
+ &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				</div>
+				<div class="article__result">
+				</div>
+			</div>
+			<h3 class="article--subheading">Eksternal</h3>
+			<div class="article__body--subheading">
+				<p>Memasukan syntax css yang berbeda folder ke dalam file html dengan menggunakan tag <code>link</code> yang di tulisakan diantara tag <code>head</code></p>
+				<div class="article__code">
+					<pre class="syntax"><code data-language="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+ &lt;title&gt;Eksternal Html&lt;/title&gt;
+ &lt;link rel=&quot;stylesheet&quot; href=&quot;folder-tujuan.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;div class=&quot;kotak&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+	<p>File css yang berada di folder lain</p>
+	<pre class="syntax"><code data-language="css">.kotak{
+ width: 300px;
+ height: 300px;
+ border: 1px solid black;
+ padding: 5px;
+}</code></pre>
+				</div>
+			</div>
+    	</div>
+    </div>
+</article>	

@@ -1,0 +1,39 @@
+<article class="article">
+	<div class="article__card">
+		<h3 class="article--heading">Float</h3>
+		<div class="article__body">
+			<p>Float adalah properti css yang akan membuat sebuah element berada di kiri ataupun kanan dari sebuah container.</p>
+			<figure>
+				<img src="assets/img/float.png" alt="float ilustrasi" class="image_contoh" loading="lazy">
+			 	<figcaption style="text-align: center;">Ilustrasi float.</figcaption>
+			</figure>
+			<p>Float biasa digunakan untuk membuat layouting sebuah website,karena mudah dipahami karena hanya memberi nilai left dan right pada sebuah element.</p>
+			<figure>
+				<img src="assets/img/float-layouting.png" alt="contoh layouting" class="image_contoh" loading="lazy">
+			 	<figcaption style="text-align: center;">float layouting.</figcaption>
+			</figure>
+		</div>
+	</div>
+	<div class="article__card">
+		<h3 class="article--heading">Permasalahan Pada Float</h3>
+		<div class="article__body">
+			<figure>
+				<img src="assets/img/float-problem.png" alt="masalah float" class="image_contoh" loading="lazy">
+			 	<figcaption style="text-align: center;">float layouting.</figcaption>
+			</figure>
+			<p>masalah pada float biasa terjadi karena element container(pembungkus) akan menggangap element di dalamnya yang menerapkan float dianggap tidak ada,terdapat 3 cara untuk mengatasi permasalahan ini.</p>
+			<h3 class="article--subheading">Overflow</h3>
+			<div class="article__body--subheading">
+				<p>Dalam menerapkan metode overflow dapat menambahkan property <code>overflow : auto</code> di container(pembungkus) element yang di telah menerapkan <code>float</code></p>
+			</div>
+			<h3 class="article--subheading">Clear</h3>
+			<div class="article__body--subheading">
+				<p>Untuk menerapkan metode clear dengan cara menambahkan <code>div</code> setelah element yang menerapkan float dengan attribute class <code>clear</code> </p>
+			</div>
+			<h3 class="article--subheading">Micro clearfix</h3>
+			<div class="article__body--subheading">
+				<p>Micro clearfix metode yang ditemukan oleh <i>Nicolas Gallagher</i> untuk memperbaiki masalah dalam menerapkan float,dengan metode ini kita hanya cukup memberi attribute class <code>cf</code> di container(pembungkus).</p>
+			</div>
+		</div>
+	</div>
+</article>

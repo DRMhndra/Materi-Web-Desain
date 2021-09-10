@@ -32,18 +32,14 @@ $urls = [
 		"title" => "semanticTag",
 		"url" => "html/semantic.html"
 	],
-	[
-		"title" => "htmlViewport",
-		"url" => "html/viewport.html"
-	],
-	[
-		"title" => "htmlLink",
-		"url" => "html/link.html"
-	],
-	[
-		"title" => "htmlScript",
-		"url" => "html/script.html"
-	],
+	// [
+	// 	"title" => "htmlViewport",
+	// 	"url" => "html/viewport.html"
+	// ],
+	// [
+	// 	"title" => "htmlScript",
+	// 	"url" => "html/script.html"
+	// ],
 	[
 		"title" => "cssIntro",
 		"url" => "css/cssDasar.html"
@@ -57,24 +53,20 @@ $urls = [
 		"url" => "css/selector.html"
 	],
 	[
-		"title" => "fontStyle",
-		"url" => "css/fontstyle.html"
+		"title" => "cssPsedu",
+		"url" => "css/psedu.html"
 	],
+	[
+		"title" => "cssPrior",
+		"url" => "css/prioritas.html"
+	],
+	// [
+	// 	"title" => "fontStyle",
+	// 	"url" => "css/fontstyle.html"
+	// ],
 	[
 		"title" => "boxModel",
 		"url" => "css/boxModel.html"
-	],
-	[
-		"title" => "margin",
-		"url" => "css/margin.html"
-	],
-	[
-		"title" => "padding",
-		"url" => "css/padding.html"
-	]
-	,[
-		"title" => "border",
-		"url" => "css/border.html"
 	],
 	[
 		"title" => "cssDisplay",

@@ -1,0 +1,122 @@
+<article class="article">
+	<div class="article__card">
+		<h3 class="article--heading">Position</h3>
+		<div class="article__body">
+			<p>Position adalah property yang digunakan untuk mengatur posisi elemen didalam layout html, adapun property dapat dikategorikan seperti ini:</p>
+			<dl>
+				<dt>Property yang berifat Static</dt>
+				<dd>static</dd>
+				<dt>Property yang bersifat non-static</dt>
+				<dd>relative</dd>
+				<dd>absolute</dd>
+				<dd>fixed</dd>
+				<dd>sticky</dd>
+			</dl>
+		</div>
+	</div>
+	<div class="article__card">
+		<h3 class="article--heading">Perbedaan Static dan Non-Static</h3>
+		<div class="article__body">
+			<h3 class="article--subheading">Static</h3>
+			<div class="article__body--subheading">
+				<p>Secara default setiap element bersifat static ketika dibuat, yang mana akan mengikuti flow layout yaitu menumpuk kebawah ataupun memanjang kesamping.</p>
+			</div>
+			<h3 class="article--subheading">Non-Static</h3>
+			<div class="article__body--subheading">
+				<p>Untuk element yang diatur non-static perilaku akan sedikit berbeda dikarenakan tidak lagi terikat oleh flow layout suatu dokument dapat diatur sedemikian rupa, ketika menerapkan non-static dapat menerapkan property tambahan <code>top,left,right,dan bottom</code>.</p>
+			</div>
+		</div>
+	</div>
+	<div class="article__card">
+		<h3 class="article--heading">Property Position</h3>
+		<div class="article__body">
+			<h3 class="article--subheading">Static</h3>
+			<div class="article__body--subheading">
+				<p>Seperti yang dijelaskan sebelumnya property: <code>static</code> akan mengikuti flow layout yaitu menumpuk kebawah ataupun memanjang kesamping.</p>
+				<div class="article__code">
+					<pre class="syntax"><code data-language="html"><div class="wrapper">
+ <div class="kotak kotak-biru"></div>
+ <div class="kotak kotak-merah"></div>
+ <div class="kotak kotak-hijau"></div>
+</div></code></pre>
+				</div>
+				<div class="article__result">
+					<div class="wrapper">
+					 <div class="kotak kotak-biru" style="background-color: blue;"></div>
+					 <div class="kotak kotak-merah" style="background-color: red;"></div>
+					 <div class="kotak kotak-hijau" style="background-color: green;"></div>
+					</div>
+				</div>
+				<p>Setiap element yang memiliki posisi static,maka setiap perubahan akan mempengaruhi element lainnya.</p>
+				<figure>
+					<img src="assets/img/ss_static_contoh.jpg" alt="contoh static" class="image_contoh" loading="lazy">
+				 	<figcaption style="text-align: center;">Ilustrasi perubahan akan mempengaruhi element lainnya</figcaption>
+				</figure> 
+				<div class="article__result">
+					<div class="wrapper">
+					 <div class="kotak kotak-biru" style="background-color: blue;"></div>
+					 <div class="kotak kotak-merah" style="background-color: red; margin-top: 50px;"></div>
+					 <div class="kotak kotak-hijau" style="background-color: green;"></div>
+					</div>
+				</div>
+			</div>
+			<h3 class="article--subheading">Relative</h3>
+			<div class="article__body--subheading">
+				<p>Element yang diberikan posisikan <code>relative</code> diibaratkan keluar dari flow normal.</p>
+				<div class="article__code">
+					<pre class="syntax"><code data-language="css">.kotak-merah{
+ position: relative;
+}</code></pre>
+				</div> 
+				<figure>
+					<img src="assets/img/ss_relative.jpg" alt="contoh relative" class="image_contoh" loading="lazy">
+				 	<figcaption style="text-align: center;">Ilustrasi relative.</figcaption>
+				</figure>
+				<div class="article__result">
+					<div class="wrapper">
+					 <div class="kotak kotak-biru" style="background-color: blue;"></div>
+					 <div class="kotak kotak-merah" style="background-color: red; position: relative;"></div>
+					 <div class="kotak kotak-hijau" style="background-color: green;"></div>
+					</div>
+				</div>
+			</div>
+			<h3 class="article--subheading">Absolute</h3>
+			<div class="article__body--subheading">
+				<p>Sama seperti position: <code>relative</code> keluar dari flownya namun element yang menerapkan <code>absolute</code> tempat awal element akan dianggap tidak ada dan akan relative terhadap element terdekatnya.</p>
+				<div class="article__code">
+					<pre class="syntax"><code data-language="css">.kotak-merah{
+ position: absolute;
+}</code></pre>
+				</div> 
+				<figure>
+					<img src="assets/img/ss_absolute_contoh.jpg" alt="contoh absolute" class="image_contoh" loading="lazy">
+				 	<figcaption style="text-align: center;">Ilustrasi absolute.</figcaption>
+				</figure>
+				<div class="article__result">
+					<div class="wrapper" style="position: relative; top: 0;">
+					 <div class="kotak kotak-biru" style="background-color: blue;"></div>
+					 <div class="kotak kotak-merah" style="background-color: red; position: absolute; left: 0; right: 0;"></div>
+					 <div class="kotak kotak-hijau" style="background-color: green;"></div>
+					</div>
+				</div>
+			</div>
+			<h3 class="article--subheading">Fixed</h3>
+			<div class="article__body--subheading">
+				<p>posisi <code>fixed</code> akan dianggap keluar dan akan relatif terhadap jendela browser sehingga akan selalu melihat element tersebut di layar jendela browser.</p>
+				<div class="article__code">
+					<pre class="syntax"><code data-language="css">.kotak-merah{
+ position: fixed;
+}</code></pre>
+				</div>
+				<figure>
+					<img src="assets/img/ss_fixed.jpg" alt="contoh fixed" class="image_contoh" loading="lazy">
+				 	<figcaption style="text-align: center;">Ilustrasi fixed.</figcaption>
+				</figure>
+			</div>
+			<h3 class="article--subheading">Sticky</h3>
+			<div class="article__body--subheading">
+				Posisi <code>Sticky</code> adalah posisi gabungan antara posisi <code>relative</code> dan <code>fixed</code>,dimana posisi akan tetap berada di tempat awalnya namun akan menempel terhadap browser ketika sampai di element tersebut.</p>
+			</div>
+		</div>
+	</div>
+</article>

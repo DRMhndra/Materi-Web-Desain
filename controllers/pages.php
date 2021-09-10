@@ -8,8 +8,9 @@
 			foreach ($urls as $url) {
 				if ( in_array($page, $url) ) {
 					include_once 'materi/'.$url["url"];
-				}
+				} 
 			}
+			
 		}
 	}else{
 		include_once 'materi/html/perkenalan.html';

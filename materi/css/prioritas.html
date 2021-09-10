@@ -1,0 +1,48 @@
+<article class="article">
+	<div class="before__article">
+		<p>Didalam html biasanya tedapat berbagai macam element,attribute yang dapat digunakan dalam keperluan selector, namun untuk menentukan prioritas style yang akan diterapkan terdapat hitungan tersendiri atau bisa disebut <span class="highlight--important">Specificity</span>.</p>
+		<div class="article__code">
+			<pre class="syntax"><code data-language="html"><p class="title" id="header-title">
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus vero quam in cupiditate eaque aspernatur.
+</p></code></pre>
+		</div>
+		<p>Element tersebut dapat di style menggunakan 3 cara yaitu </p>
+		<div class="article__code">
+			<pre class="syntax"><code data-language="css">p { color: orange; }
+.title{ color: blue; }
+#header-title{ color: red; }
+</code></pre>
+		</div>
+		<p>Namun yang manakah style yang diterapkan? jawabannya adalah <span class="highlight--important">selector id</span> kenapa bisa seperti itu, itu dikarenakan perbedaan bobot nilai dari suatu selector.</p>
+	</div>
+	<div class="article__card">
+	<h3 class="article--heading">Specificity</h3>
+	<div class="article__body">
+		<p>Apa itu specificity? specificity adalah pentuan seberapa spesifik aturan pada css.</p>
+		<div class="wrapper-table">
+			<table class="table-custom">
+				<thead>
+					<tr>
+						<th>Nilai</th>
+						<th>Bobot</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>tag</td>
+						<td>1</td>
+					</tr>				
+					<tr>
+						<td>class</td>
+						<td>10</td>
+					</tr>				
+					<tr>
+						<td>id</td>
+						<td>100</td>
+					</tr>
+				</tbody>
+			</table>	
+		</div>
+		<p>Sehingga bisa kita simpulkan dari contoh diatas kenapa paragraph tersebut bisa berwarna merah, dikarenakan nilai selector <code>#id</code> lebih tinggi.</p>
+	</div>
+</article>

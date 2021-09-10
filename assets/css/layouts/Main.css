@@ -40,6 +40,7 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
+.before__article { margin-bottom: 1rem; }
 .article__card {
   position: relative;
   margin-bottom: 1.8rem;

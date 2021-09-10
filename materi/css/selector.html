@@ -1,0 +1,88 @@
+<article class="article">
+	<div class="article__card">
+    	<h3 class="article--heading">Selector</h3>
+    	<div class="article__body">
+    		<p>Selector adalah aturan untuk menentukan memapulasi format, penulisan ataupun bentuk dari sebuah element html yang dipilih. Dalam menseleksi sebuah element dapat dibedakan menjadi 4 selector diantaranya</p>
+    	</div>
+    	<ol class="list--number">
+			<li>Selector Universal</li>
+    		<li>Selector Tag</li>
+			<li>Selector id atau class</li>
+			<li>Selector berdasarkan attribute dari suatu element</li>
+    	</ol>
+    	<h3 class="article--subheading">Selector Universal</h3>
+		<div class="article__body--subheading">
+			<p>Tipe selector yang akan menerapakan semua aturan kedalam element html yang ada disuatu file.</p>
+			<div class="article__code">
+				<pre class="syntax"><code data-language="html">&lt;body&gt;
+ <h2>Varian virus telah mencapai versi Tango</h2>
+ <p>Virus kini kian meningkat...</p>
+&lt;/body&gt;</code></pre>
+				<p>lalu diberikan aturan universal css</p>
+				<pre class="syntax"><code data-language="css">* {
+ color: lightpink;
+ text-decoration: underline;
+}</code></pre>
+			</div>
+			<div class="article__result">
+				<div style="color: lightpink; text-decoration: underline;">
+					<h2>Varian virus telah mencapai versi Tango</h2>
+ 					<p>Virus kini kian meningkat...</p>
+				</div>
+			</div>
+		</div>
+		<h3 class="article--subheading">Selector Tag</h3>
+		<div class="article__body--subheading">
+			<p>Selector tipe ini akan memberikan aturan ke dalam tag yang dipilih selama nilai (specificity) dari tag tersebut sama.</p>
+			<div class="article__code">
+				<pre class="syntax"><code data-language="html">&lt;body&gt;
+ <p>Paragraph ini akan berwarna biru</p>
+ <p class="warna-hijau">Virus kini kian meningkat...</p>
+ <p>Paragraph ini juga akan berwarna biru</p>
+&lt;/body&gt;</code></pre>
+				<p>diberikan aturan menggunan selector tag</p>
+				<pre class="syntax"><code data-language="css">p { color: blue; }</code></pre>
+			</div>
+			<div class="article__result">
+				<p style="color: blue;">Paragraph ini akan berwarna biru</p>
+				<p class="warna-hijau">Paragraph ini berbeda sendiri</p>
+				<p style="color: blue;">Paragraph ini juga akan berwarna biru</p>
+			</div>
+			<p>Lalu kenapa paragraph kedua tidak ikut berubah warna? itu di karenakan perbedaan berat bobot nilai atau (spesificity) dari suatu selector, spesificity akan dibahas materi yang berbeda.</p>
+		</div>
+		<h3 class="article--subheading">Selector id dan class</h3>
+		<div class="article__body--subheading">
+			<p>Selector ini digunakan saat dalam suatu element terdapat salah attribute <code>class</code> ataupun <code>id</code>.</p>
+			<div class="article__code">
+				<pre class="syntax"><code data-language="html">&lt;body&gt;
+ <div class="kotak-kartu">
+  <div class="kotak-header"></div>
+  <div id="kotak-body"></div>
+ </div>
+&lt;/body&gt;</code></pre>
+				<p>untuk attribute class di dalam selector menggunakan <code>.< diikuti-dengan-nama class ></code></p>
+				<pre class="syntax"><code data-language="css">.kotak-kartu {
+ border: 1px solid black;
+ width: 150px; 
+ height: 150px;
+}
+.kotak-header {
+ height: 50px; 
+ background-color: lightblue;
+}</code></pre>
+				<p>untuk attribute id di dalam selector menggunakan <code>#< diikuti-dengan-nama id ></code></p>
+				<pre class="syntax"><code data-language="css">#kotak-body {
+ border: 1px solid black;
+ width: 150px; 
+ height: 150px;
+}</code></pre>
+			</div>
+			<div class="article__result">
+				<div class="kotak-kartu" style="border: 1px solid black; width: 150px; height: 150px; margin: 0 auto;">
+					<div class="kotak-header" style="height: 50px; background-color: lightblue;"></div>
+			 		<div id="kotak-body" style="height: 100px; background-color: lightpink;"></div>
+			 	</div>
+			</div>
+		</div>
+    </div>
+</article>

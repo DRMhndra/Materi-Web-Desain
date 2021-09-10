@@ -53,11 +53,6 @@
               <span class="text__link">Semantic Tag</span>
             </a>
           </li>
-          <li class="navbar__item">
-            <a href="index.php?page=htmlLink" class="navbar__link text--primary">
-              <span class="text__link">Html Link</span>
-            </a>
-          </li>
         </ul>
       </li>
       <li class="navbar__item">
@@ -67,18 +62,53 @@
         </a>
         <ul class="navbar__item dropdown__list">
           <li class="navbar__item">
-            <a href="" class="navbar__link text--primary">
+            <a href="index.php?page=cssIntro" class="navbar__link text--primary">
               <span class="text__link">Perkenalan</span>
             </a>
           </li>
           <li class="navbar__item">
-            <a href="" class="navbar__link text--primary">
+            <a href="index.php?page=cssPenulisan" class="navbar__link text--primary">
               <span class="text__link">Penulisan CSS</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=cssSelector" class="navbar__link text--primary">
+              <span class="text__link">Selector</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=cssPsedu" class="navbar__link text--primary">
+              <span class="text__link">Pseudo-class</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=cssPrior" class="navbar__link text--primary">
+              <span class="text__link">Css Prioritas</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=boxModel" class="navbar__link text--primary">
+              <span class="text__link">Box Model</span>
             </a>
           </li>
           <li class="navbar__item">
             <a href="index.php?page=cssDisplay" class="navbar__link text--primary">
               <span class="text__link">Display</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=position" class="navbar__link text--primary">
+              <span class="text__link">Position</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=float" class="navbar__link text--primary">
+              <span class="text__link">Float</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=flex" class="navbar__link text--primary">
+              <span class="text__link">Flexbox</span>
             </a>
           </li>
         </ul>
