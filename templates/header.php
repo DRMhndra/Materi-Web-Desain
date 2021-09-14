@@ -120,8 +120,48 @@
         </a>
         <ul class="navbar__item dropdown__list">
           <li class="navbar__item">
-            <a href="" class="navbar__link text--primary">
+            <a href="index.php?page=jsIntro" class="navbar__link text--primary">
               <span class="text__link">Perkenalan</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=jsPenulisan" class="navbar__link text--primary">
+              <span class="text__link">Penulisan JS</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=jsSyntax" class="navbar__link text--primary">
+              <span class="text__link">Syntax</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=jsTipeData" class="navbar__link text--primary">
+              <span class="text__link">Tipe Data</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=jsOperator" class="navbar__link text--primary">
+              <span class="text__link">Operator</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=jsArray" class="navbar__link text--primary">
+              <span class="text__link">Array</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=jsPercabangan" class="navbar__link text--primary">
+              <span class="text__link">Percabangan</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=jsPerulangan" class="navbar__link text--primary">
+              <span class="text__link">Perulangan</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.php?page=jsFunction" class="navbar__link text--primary">
+              <span class="text__link">Function</span>
             </a>
           </li>
         </ul>
@@ -132,6 +172,31 @@
           <span class="text__link ml--1">Php</span>
         </a>
         <ul class="navbar__item dropdown__list">
+          <li class="navbar__item">
+            <a href="" class="navbar__link text--primary">
+              <span class="text__link">Perkenalan</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link text--primary">
+              <span class="text__link">Perkenalan</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link text--primary">
+              <span class="text__link">Perkenalan</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link text--primary">
+              <span class="text__link">Perkenalan</span>
+            </a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link text--primary">
+              <span class="text__link">Perkenalan</span>
+            </a>
+          </li>
           <li class="navbar__item">
             <a href="" class="navbar__link text--primary">
               <span class="text__link">Perkenalan</span>

@@ -71,6 +71,27 @@
 	height: 100px;
 	margin: 0 auto;
 }
+.btn {
+    display: block;
+    max-width: 120px;
+    padding: 10px;
+    margin: .8rem 0;
+    box-sizing: border-box;
+}
+.btn.btn-link-to {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 1rem;
+    border: 1px solid #32516c;
+    transition: .5s all ease-in-out;
+}
+.btn.btn-link-to:hover {
+    color: #fff;
+    border-radius: 3px;
+    background-color: #32516c;
+}
 @keyframes animate--fadeInDown {
 	from {
 		opacity: 0;

@@ -1,0 +1,81 @@
+<article class="article">
+	<div class="before__article">
+		<p>Array pada umumnya adalah kumpulan tipe data yang sama, namun untuk javascript dapat berupa campuran tipe data bisa string, number, dan object.</p><br>
+		<p>Array di dalam javascript termasuk dalam tipe data object, seperti array pada umumnya terdiri dari index dan value.</p>
+	</div>
+	<div class="article__card">
+		<h3 class="article--heading">Membuat Array</h3>
+		<div class="article__body">
+			<div class="article__code">
+				<pre class="syntax"><code data-language="javascript">let mahasiswa = new Array('sandi', 'dani', 'ahmad'); // cara lama
+let mahasiswa = ['sandi', 'dani', 'ahmad']; // cara lebih singkat</code></pre>
+			</div>
+		</div>
+	</div>
+	<div class="article__card">
+		<h3 class="article--heading">Mengakses data array</h3>
+		<div class="article__body">
+			<p>Sama pada array umumnya untuk mengakses data menggunakan index dari isi array tersebut, dan index selalu dimulai dari 0.</p>
+			<div class="article__code">
+				<pre class="syntax"><code data-language="javascript">let mahasiswa = ['sandi', 'dani', 'ahmad'];
+console.log(mahasiswa[1]) // dani</code></pre>
+			</div>
+		</div>
+	</div>
+	<div class="article__card">
+		<h3 class="article--heading">Merubah value array</h3>
+		<div class="article__body">
+			<div class="article__code">
+				<pre class="syntax"><code data-language="javascript">let mahasiswa = ['sandi', 'dani', 'ahmad'];
+mahasiswa[1] = 'sulaiman';
+console.log(mahasiswa[1]) // sulaiman</code></pre>
+			</div>
+		</div>
+	</div>
+	<div class="article__card">
+		<h3 class="article--heading">Manipulasi value pada array</h3>
+		<div class="article__body">
+			<p>Dikarenakan array adalah tipe data object dalam javascript sehingga terdapat method atau fungsi bawaan yang telah tersedia di object array yang dapat digunakan untuk manipulasi isi array tersebut, diantaranya: </p>
+			<h3 class="article--subheading">forEach</h3>
+			<div class="article__body--subheading">
+				<p>forEach digunakan untuk melakukan perulangan pada isi dari suatu array.</p>
+				<div class="article__code">
+					<pre class="syntax"><code data-language="javascript">array.forEach(function(< data >){
+ //nilai yang akan diulang
+});</code></pre>
+				</div>
+				<a href="https://replit.com/@dimasrzkm/arrayForeach" target="_blank" class="btn btn-link-to">Lihat Kode</a>
+			</div>
+			<h3 class="article--subheading">filter</h3>
+			<div class="article__body--subheading">
+				<p>Fungsi yang berguna untuk memilah isi dari array sesuai dengan kondisi yang ditentukan serta membuat array baru dari array yang difilter.</p>
+				<div class="article__code">
+					<pre class="syntax"><code data-language="javascript">array.filter(function(< data >){
+ // data yang akan difilter
+});</code></pre>
+				</div>
+				<a href="https://replit.com/@dimasrzkm/arrayFilter" target="_blank" class="btn btn-link-to">Lihat Kode</a>
+			</div>
+			<h3 class="article--subheading">map</h3>
+			<div class="article__body--subheading">
+				<p>Fungsi yang digunakan untuk melakukan pengecekan ataupun pengoperasian terhadap suatu nilai dalam array dan hasil dari pengoperasian dari nilai tersebut dibuatkan array baru.</p>
+				<div class="article__code">
+					<pre class="syntax"><code data-language="javascript">array.map(function(< data >){
+ // data yang akan dimanipulasi
+});</code></pre>
+				</div>
+				<a href="https://replit.com/@dimasrzkm/arrayMap" target="_blank" class="btn btn-link-to">Lihat Kode</a>
+			</div>
+			<h3 class="article--subheading">reduce</h3>
+			<div class="article__body--subheading">
+				<p>Fungsi untuk melakukan pengoprasian aritmatika terhadap semua elemen sehingga menghasilkan satu nilai.</p>
+				<div class="article__code">
+					<pre class="syntax"><code data-language="javascript">array.reduce(function(pre, cur){
+ // operasi yang akan dilakukan
+}, < nilai awal >);</code></pre>
+				</div>
+				<a href="https://replit.com/@dimasrzkm/arrayReduce" target="_blank" class="btn btn-link-to">Lihat Kode</a>
+			</div>
+		</div>
+	</div>
+</article>

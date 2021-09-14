@@ -90,18 +90,34 @@ $urls = [
 	],
 	[
 		"title" => "jsPenulisan",
-		"url" => "javascript/inputfile.html"
+		"url" => "javascript/penulisanJs.html"
 	],
 	[
-		"title" => "jsOutput",
-		"url" => "javascript/output.html"
+		"title" => "jsSyntax",
+		"url" => "javascript/syntax.html"
 	],
 	[
-		"title" => "jsStatment",
-		"url" => "javascript/statment.html"
+		"title" => "jsTipeData",
+		"url" => "javascript/tipeData.html"
 	],
 	[
-		"title" => "jsComent",
-		"url" => "javascript/coment.html"
+		"title" => "jsOperator",
+		"url" => "javascript/operator.html"
+	],
+	[
+		"title" => "jsPercabangan",
+		"url" => "javascript/percabangan.html"
+	],
+	[
+		"title" => "jsPerulangan",
+		"url" => "javascript/perulangan.html"
+	],
+	[
+		"title" => "jsFunction",
+		"url" => "javascript/function.html"
+	],
+	[
+		"title" => "jsArray",
+		"url" => "javascript/array.html"
 	]
 ];
