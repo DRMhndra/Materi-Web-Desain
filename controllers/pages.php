@@ -3,7 +3,7 @@
 	if ( isset($_GET["page"])) {
 		$page = $_GET["page"];
 		if ( preg_match('~\W~', $page)) {
-			echo 'Sorry';
+			include_once 'materi/introduction.html';
 		}else{
 			foreach ($urls as $url) {
 				if ( in_array($page, $url) ) {
@@ -13,5 +13,5 @@
 			
 		}
 	}else{
-		include_once 'materi/html/perkenalan.html';
+		include_once 'materi/introduction.html';
 	}

@@ -2,7 +2,7 @@
   <nav class="navbar">
     <ul class="navbar__wrapper">
       <li class="navbar__logo">
-        <a href="#" class="navbar__link">
+        <a href="index.php" class="navbar__link">
           <span class="text__link">WEB DEV</span>
           <img src="./assets/icons/icon-fast.svg" alt="" class="navbar__icon navbarBrand--icon">
         </a>

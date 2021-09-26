@@ -21,6 +21,7 @@
 }
 @media only screen and (max-width: 480px) {
 	.header{ width: 0%;}
+	.navbarBrand--icon{ display: none; }
 	.main{ 
 		width: 100%; 
 	}
@@ -30,6 +31,12 @@
 	}
 	.image_contoh{ width: 100%; }
 	p{ font-size: 1.1rem; }
+	.intro_left > h2 {
+    font-size: 2rem;
+	}
+	.intro_left > p {
+    font-size: 1rem;
+	}
 }
 
 .header--changeSizeXl{ width: 5%; }

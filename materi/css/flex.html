@@ -1,0 +1,165 @@
+<article class="article">
+  <div class="before__article">
+    <p>Flexbox atau flexible box berguna untuk menyusun sebuah layout yang dapat mengontrol ukuran, tata letak, jarak dari sebuah element berdasarkan pembungkus(container) yang menampungnya.</p>
+  </div>
+  <div class="article__card">
+    <h3 class="article--heading">Terminology Flexbox</h3>
+    <div class="article__body">
+        <p>Di dalam pembuatan layout menggunakan flexbox biasanya dikelompokan menggunakan pembungkus(container) yang biasa disebut <span class="highlight--important">flex-container</span>, dan untuk element-element di dalamnya disebut dengan <span class="highlight--important">flex-items</span>.</p>
+        <figure>
+					<img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox/flex_terms.png" alt="term flexbox" class="image_contoh" loading="lazy">
+				 	<figcaption style="text-align: center;">Ilustrasi flexbox</figcaption>
+				</figure>
+        <h4>Penjelasan</h4>
+        <ul class="list--unordered">
+          <li>main-axis = sumbu utama dari container arahnya berdasarkan properti direction</li>
+          <li>main-start | main-end = penempatan item pada container yang dapat diletakan antara sisi start dan juga end</li>
+          <li>cros-axis = sumbu silang dari container arahnya juga berdasarkan properti direction yang digunakan</li>
+          <li>cros-start | cros-end = penempatan item pada container</li>
+        </ul><br />
+        <p>Arah dari sebuah flexbox tergantung dari bagaimana kita mendefinisikannya dimana terdapat 2 arah yaitu <span class="highlight--important">row</span> dan <span class="highlight--important">column</span>.</p>
+        <figure>
+					<img src="https://www.w3.org/TR/2012/WD-css3-flexbox-20120322/images/flex-direction-terms.svg" alt="term flexbox" class="image_contoh" loading="lazy">
+				 	<figcaption style="text-align: center;">Ilustrasi flexbox</figcaption>
+				</figure>
+        <p>Ketika arah flexbox <span class="highlight--important">row</span> maka main-axis adalah horizontal dan untuk crox-axis adalah vertical, sebaliknya ketika arah bernilai column.</p><br>
+        <h4>Code untuk penjelasan selanjutnya</h4>
+        <div class="article__code">
+          <pre class="syntax"><code data-language="html"><div class="container">
+ <div class="kotak kotak-biru"></div>
+ <div class="kotak kotak-merah"></div>
+ <div class="kotak kotak-hijau"></div>
+</div></code></pre>
+        </div>
+        <div class="article__code">
+          <pre class="syntax"><code data-language="css">.container{
+ display: flex;
+}
+.kotak {
+ width: 100px;
+ height: 100px;
+}</code></pre>
+        </div>
+    </div>
+  </div>
+  <div class="article__card">
+    <h3 class="article--heading">Flexbox Property</h3>
+    <div class="article__body">
+      <h3 class="article--subheading">flex-direction</h3>
+			<div class="article__body--subheading">
+        <p>flex-direction digunakan untuk menentukan arah dari element yang ada di dalam pembungkus(container).</p>
+        <div class="article__code">
+          <pre class="syntax"><code data-language="css">.container{
+ display: flex;
+ flex-direction: row | row-reverse | column | column-reverse;
+}</code></pre>
+        </div>
+        <ul class="list--unordered">
+          <li>row kearah samping</li>
+          <li>row-reverse kearah samping namun item belakang menjadi didepan</li>
+          <li>column kearah bawah (tumpuk)</li>
+          <li>column-reverse kekearah bawah namun item bawah menjadi atas</li>
+        </ul>
+      </div>
+      <h3 class="article--subheading">flex-wrap</h3>
+			<div class="article__body--subheading">
+        <p>flex-wrap digunakan membuat item didalamnya apakah harus dibuat ke baris baru jika sudah memenuhi lebar dari containernya</p>
+        <div class="article__code">
+          <pre class="syntax"><code data-language="css">.container{
+ display: flex;
+ flex-wrap: no-wrap | wrap | wrap-reverse;
+}</code></pre>
+        </div>
+        <ul class="list--unordered">
+          <li>no-wrap,tidak akan dibuat didalamnya ke baris baru (default)</li>
+          <li>wrap,dibuat ke baris baru</li>
+          <li>wrap-reverse dibuat baris baru namun terbalik</li>
+        </ul><br />
+        <p>Terdapat syntax shorth-hand untuk kedua property diatas yaitu <span class="highlight--important">flex-flow</span></p>
+        <div class="article__code">
+          <pre class="syntax"><code data-language="css">.container{
+ flex-flow: flex-direction flex-wrap;
+}</code></pre>
+        </div>
+      </div>
+      <h3 class="article--subheading">justify-content</h3>
+			<div class="article__body--subheading">
+        <p>justify-content digunakan untuk mengatur item-flexbox secara main-axis (horizontal/vertical) sesuai direction</p>
+        <div class="article__code">
+          <pre class="syntax"><code data-language="css">.container{
+ justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+}</code></pre>
+        </div>
+        <ul class="list--unordered">
+          <li>flex-start,mengatur elemen ke arah samping kiri dari containernya</li>
+          <li>flex-end,mengatur elemen ke arah samping kanan dari containernnya</li>
+          <li>center,mengatur elemen ke tengah</li>
+          <li>space-between,mengatur elemen menjadi saling sama rata</li>
+          <li>space-around,mengatur elemen menjadi saling sama rata untuk main-axis namun memberikan ruang kosong yang sama diantara item</li>
+          <li>space-evenly,mengatur elemen menjadi saling sama rata untuk main-axis namun memberikan ruang kosong yang sama diantara item dan ruang tepi</li>
+        </ul>
+      </div>
+      <h3 class="article--subheading">align-items</h3>
+			<div class="article__body--subheading">
+        <p>align-items mengatur item-flexbox secara cros-axis (horizontal/vertical) sesuai dengan direction</p>
+        <div class="article__code">
+          <pre class="syntax"><code data-language="css">.container{
+ align-items: flex-start | flex-end | stretch | center | baseline;
+}</code></pre>
+        </div>
+        <ul class="list--unordered">
+          <li>flex-start,mengatur elemen ke arah atas dari containernya</li>
+          <li>flex-end,mengatur elemen ke arah bawah dari containernnya</li>
+          <li>stretch,mengatur elemen sama tinggi sesuai dengan containernya</li>
+          <li>center,mengatur elemen kearah tengah</li>
+          <li>baseline,mengatur elemen sesuai dengan text yang ada di item-flex</li>
+        </ul>
+      </div>
+      <h3 class="article--subheading">align-content</h3>
+			<div class="article__body--subheading">
+        <p>align-content digunakan untuk mengatur elemen jika lebih dari containernya berdasarkan cross-axis biasanya digunakan bersama dengan flex-wrap untuk property nya sama seperti justify-content dan align-items</p>
+        <div class="article__code">
+          <pre class="syntax"><code data-language="css">.container{
+ align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | center | baseline;
+}</code></pre>
+        </div>
+      </div>
+      <h3 class="article--subheading">flex-grow</h3>
+			<div class="article__body--subheading">
+        <p>flex-grow digunakan untuk menambahkan ukuran item jika memungkinkan pada container tersedia space kosong.</p>
+        <div class="article__code">
+          <pre class="syntax"><code data-language="css">.container{
+ flex-grow: < ukuran grow >;
+}</code></pre>
+        </div>
+      </div>
+      <h3 class="article--subheading">flex-shrink</h3>
+			<div class="article__body--subheading">
+        <p>flex-shrink digunakan untuk menyusutkan sebuah item terhadap sisa ukuran container/browser.</p>
+        <div class="article__code">
+          <pre class="syntax"><code data-language="css">.container{
+ flex-shrink: < ukuran shrink >;
+}</code></pre>
+        </div>
+      </div>
+      <h3 class="article--subheading">flex-basis</h3>
+			<div class="article__body--subheading">
+        <p>Flex-basis digunakan untuk mengatur ukuran awal dari sebuah item.</p>
+        <div class="article__code">
+          <pre class="syntax"><code data-language="css">.container{
+ flex-basis: < ukuran awal >;
+}</code></pre>
+        </div>
+      </div>
+      <h3 class="article--subheading">order</h3>
+			<div class="article__body--subheading">
+        <p>Order digunakan untuk menentukan urutan dari flex-item tanpa harus merubah element html secara langsung.</p>
+        <div class="article__code">
+          <pre class="syntax"><code data-language="css">.kotak-hijau{
+ order : < urutan item >;
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
