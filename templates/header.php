@@ -177,31 +177,6 @@
               <span class="text__link">Perkenalan</span>
             </a>
           </li>
-          <li class="navbar__item">
-            <a href="" class="navbar__link text--primary">
-              <span class="text__link">Perkenalan</span>
-            </a>
-          </li>
-          <li class="navbar__item">
-            <a href="" class="navbar__link text--primary">
-              <span class="text__link">Perkenalan</span>
-            </a>
-          </li>
-          <li class="navbar__item">
-            <a href="" class="navbar__link text--primary">
-              <span class="text__link">Perkenalan</span>
-            </a>
-          </li>
-          <li class="navbar__item">
-            <a href="" class="navbar__link text--primary">
-              <span class="text__link">Perkenalan</span>
-            </a>
-          </li>
-          <li class="navbar__item">
-            <a href="" class="navbar__link text--primary">
-              <span class="text__link">Perkenalan</span>
-            </a>
-          </li>
         </ul>
       </li>
     </ul>
